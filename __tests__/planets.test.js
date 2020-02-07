@@ -2,56 +2,60 @@ import { Planets } from '../src/planets';
 
 describe('Mercury', () => {
 
-  test('mercury variables age should be 0.24 after running the mercury age function and when given 1', () => {
+  let mercury;
 
-    let mercury = new Planets(1);
+  beforeEach(() => {
+    mercury = new Planets(10);
 
     mercury.mercuryAge();
+  })
 
-    expect(mercury.age).toEqual(0.24);
+  test('mercury variables age should be 2.4 after running the mercury age function and when given 10', () => {
+    expect(mercury.age).toEqual(2.4);
+  })
 
-  }) //Passes
+  test('should take the earth life expectancy and convert it into mercury years', () => {
+    expect(mercury.lifeExp).toEqual(17.52);
+  })
 
 });
 
 describe('Venus', () => {
 
-  test('venus variables age should be 0.62 after running the venus age function and when given 1', () => {
+  let venus;
 
-    let venus = new Planets(1);
+  beforeEach(() => {
+    venus = new Planets(10);
 
     venus.venusAge();
+  })
 
-    expect(venus.age).toEqual(0.62);
+  test('venus variables age should be 6.2 after running the venus age function and when given 10', () => {
+    expect(venus.age).toEqual(6.2);
+  })
 
-  }) //Passes
+  test('should take the earth life expectancy and convert it into venus years', () => {
+    expect(venus.lifeExp).toEqual(45.26);
+  })
 
 });
 
 describe('Mars', () => {
 
-  test('mars variables age should be 1.88 after running the mars age function and when given 1', () => {
+  let mars;
 
-    let mars = new Planets(1);
+  beforeEach(() => {
+    mars = new Planets(10);
 
     mars.marsAge();
+  })
 
-    expect(mars.age).toEqual(1.88);
+  test('mars variables age should be 18.8 after running the mars age function and when given 10', () => {
+    expect(mars.age).toEqual(18.8);
+  })
 
-  }) //Passes
-
-});
-
-describe('Jupiter', () => {
-
-  test('jupiter variables age should be 11.86 after running the jupiter age function and when given 1', () => {
-
-    let jupiter = new Planets(1);
-
-    jupiter.jupiterAge();
-
-    expect(jupiter.age).toEqual(11.86);
-
-  }) //Passes
+  test('should take the earth life expectancy and convert it into mars years', () => {
+    expect(mars.lifeExp).toEqual(137.24);
+  })
 
 });

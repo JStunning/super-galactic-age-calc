@@ -1,11 +1,12 @@
 {
-  "name": "super-galactic-age-calculator",
+  "name": "galactic-calc",
   "version": "1.0.0",
-  "description": "Takes persons earth years and converts it into other planets years ",
+  "private": true,
+  "description": "RPG game about feudal Japan",
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
-    "start": "npm run build; webpack-dev-server --open --mode development",
+    "start": "npm run build & webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
     "test": "jest",
     "debug": "node --inspect node_modules/.bin/jest --runInBand"
@@ -29,8 +30,12 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git:https://github.com/JackStunning/super-galactic-age-calc.git"
   }
 }

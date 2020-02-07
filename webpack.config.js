@@ -1,7 +1,8 @@
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');  
+const { CleanWebpackPlugin } = require('clean-webpack-plugin'); //new line
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');  // new line
 
 
 module.exports = {
@@ -10,13 +11,13 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  devtool: 'eval-source-map',  
-  devServer: {                 
-  contentBase: './dist'      
-},
+  devtool: 'eval-source-map',  // new line
+  devServer: {                 // new line
+    contentBase: './dist'      // new line
+  },
   plugins: [
-     new UglifyJsPlugin({ sourceMap: true }),    
-    new CleanWebpackPlugin(),   
+    new UglifyJsPlugin({ sourceMap: true }),    // new line
+    new CleanWebpackPlugin(),   // new line
     new HtmlWebpackPlugin({
       title: '',
       template: './src/index.html',
@@ -35,9 +36,9 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: [
-            /node_modules/,
-            /spec/
-          ],
+          /node_modules/,
+          /spec/
+        ],
         loader: "eslint-loader"
       }
     ]

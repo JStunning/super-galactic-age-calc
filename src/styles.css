@@ -1,0 +1,15 @@
+body {
+  margin: 2%;
+}
+
+#age::after {
+  content: '100';
+  left: 80%;
+  top: 26%;
+}
+
+#age::before {
+  content: '0';
+  left: 12%;
+  top: 26%;
+}

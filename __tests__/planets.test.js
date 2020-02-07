@@ -18,6 +18,10 @@ describe('Mercury', () => {
     expect(mercury.lifeExp).toEqual(304.17);
   })
 
+  test('should take age and life expectancy of planet and returns how many years you have left to live based on average, output should be 262.5', () => {
+    expect(mercury.yearsLeft).toEqual(262.5);
+  })
+
 });
 
 describe('Venus', () => {
@@ -36,6 +40,10 @@ describe('Venus', () => {
 
   test('should take the earth life expectancy and convert it into venus years', () => {
     expect(venus.lifeExp).toEqual(117.74);
+  })
+
+  test('should take age and life expectancy of planet and returns how many years you have left to live based on average, output should be 101.61', () => {
+    expect(venus.yearsLeft).toEqual(101.61);
   })
 
 });
@@ -58,6 +66,10 @@ describe('Mars', () => {
     expect(mars.lifeExp).toEqual(38.83);
   })
 
+  test('should take age and life expectancy of planet and returns how many years you have left to live based on average, output should be 33.51', () => {
+    expect(mars.yearsLeft).toEqual(33.51);
+  })
+
 });
 
 describe('Jupiter', () => {
@@ -76,6 +88,10 @@ describe('Jupiter', () => {
 
   test('should take the earth life expectancy and convert it into jupiter years', () => {
     expect(jupiter.lifeExp).toEqual(6.16);
+  })
+
+  test('should take age and life expectancy of planet and returns how many years you have left to live based on average, output should be 5.32', () => {
+    expect(jupiter.yearsLeft).toEqual(5.32);
   })
 
 });

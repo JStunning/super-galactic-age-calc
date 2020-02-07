@@ -1,5 +1,18 @@
 body {
   margin: 2%;
+  background-color: black;
+  color: white;
+}
+
+p {
+  margin-top: 2.5%;
+}
+
+img {
+  height: 300px;
+  width: auto;
+  float: right;
+  margin-right: 75%;
 }
 
 #age::after {

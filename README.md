@@ -15,7 +15,6 @@ lived in other planet years. It will also give you an average life expectancy on
 
 github-pages link: https://jackstunning.github.io/super-galactic-age-calc/
 
-
 _That should be all the set up_
 
 ## Specs
